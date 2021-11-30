@@ -6,7 +6,7 @@ body{
 }
 
 .bg-dark{
-      background: url(./assets/Landing-Page-background-image.png) 0% 0% no-repeat padding-box;
+      background: url(../assets/Landing-Page-background-image.png) 0% 0% no-repeat padding-box;
       background-size: cover;
 }
 
@@ -115,7 +115,7 @@ body{
       position: absolute;
       width:100px;
       left:-100px;
-      background-image: url('./assets/blog-left-bg.png');
+      background-image: url('../assets/blog-left-bg.png');
       background-position: unset;
       background-repeat: no-repeat;
       height: 500px;
@@ -125,7 +125,7 @@ body{
       width:100px;
       right:-100px;
       top:0;
-      background-image: url('./assets/blog-right-bg.png');
+      background-image: url('../assets/blog-right-bg.png');
       background-position: unset;
       background-repeat: no-repeat;
       height: 500px;
