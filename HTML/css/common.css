@@ -38,6 +38,28 @@ nav{
 .newsletter{
       margin: 20px 0 50px 0;
 }
+.newsletter>div{
+      display: flex;
+      width: 90%;
+      margin: auto;
+      align-items: center;
+}
+.newsletter .up-arrow{
+      width:48px;
+      height: 48px;
+      background: #525252;
+      border-radius:50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.newsletter .up-arrow img{
+      width: 19px;
+      height: 10px;
+}
+.newsletter .email{
+      margin:auto;
+}
 .newsletter p{
       font-weight:1000;
 }
@@ -60,6 +82,9 @@ nav{
       border:0;
       color:#FFFFFF;
       font-size: 14px;
+}
+.newsletter .chat{
+      align-self: baseline;
 }
 
 footer{
@@ -168,6 +193,10 @@ footer .btn-yellow{
       .newsletter-input>input[type="text"]{
             margin-bottom: 20px;
       }
+      .newsletter .up-arrow,.newsletter .chat{
+            display: none;
+      }
+
       footer{
             height:auto;
       }
