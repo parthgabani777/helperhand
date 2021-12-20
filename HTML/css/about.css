@@ -1,0 +1,35 @@
+body{
+      font-family: 'Roboto', sans-serif;
+}
+
+.about-img{
+      padding-top: 60px;
+}
+.about-img img{
+      width: 100%;
+}
+.about-info{
+      padding-top: 30px;
+}
+.about-title{
+      font-size: 36px;
+      color: #4F4F4F;
+}
+.about-text{
+      padding-top: 35px;
+      font-size: 16px;
+      color: #646464;
+}
+
+.our-story{
+      padding-top: 30px;
+}
+.story-title{
+      font-size: 36px;
+      color: #4F4F4F;
+}
+.story-text{
+      padding-top: 35px;
+      font-size: 16px;
+      color: #646464;
+}

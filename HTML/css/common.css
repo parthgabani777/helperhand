@@ -1,21 +1,25 @@
-.btn-grey{
-      background: #00607200 0% 0% no-repeat padding-box;
-      border: 1px solid #FFFFFF80;
-      border-radius: 40px;
-      font-size: 17px;
-      color:#FFFFFF;
-}
 .btn-light{
       background: #29626D 0% 0% no-repeat padding-box;
-      border: 1px solid #FFFFFF80;
+      border: 1px solid #FFFFFF80!important;
       border-radius: 40px;
-      color:#FFFFFF;
+      color:#FFFFFF!important;
       font-size: 17px;
 }
 
+.star-icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.line{
+      width:62px;
+      height:1px;
+      border-bottom: 1px solid #cccccc;
+      margin:0 8px;
+}
+
 nav{
-      background: #525252 0% 0% no-repeat padding-box;
-      
+      background: #525252 0% 0% no-repeat padding-box;     
 }
 .navbar{
       border:0;
@@ -23,16 +27,29 @@ nav{
       margin-bottom: 0;
       border-radius: 0;
 }
-.navbar-toggle span{
-      background:#000;
+.navbar .navbar-brand{
+      padding: 0;
+      margin-left: 15px;
 }
+.navbar-toggler{
+      border-color: rgba(255,255,255, 0.5);
+      margin-right: 15px;
+}
+.navbar-toggler-icon{
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 .navbar-collapse a{
       text-decoration: none;
       color:#fff;
-      margin-right:4px;
+      margin-right:8px;
+      padding: 10px 20px;
+      border: 1px solid #525252;
 }
-.navbar-collapse a:hover,.navbar a:focus{
+.navbar-collapse a:hover{
       background-color: #525252!important;
+      border: 1px solid #FFFFFF80;
+      border-radius: 40px;
 }
 
 .newsletter{
@@ -149,10 +166,8 @@ footer .btn-yellow{
       right: 30px;
 }
 
-@media (max-width: 900px){
+@media(max-width:1200px){
       .navbar-brand{
-            margin:5px 0;
-            padding:0;
       }
       .header{
             display: flex;
@@ -166,11 +181,14 @@ footer .btn-yellow{
       }
       .navbar-collapse ul{
             float:left;
+            padding:15px 0 0 15px;
       }
       .navbar-collapse ul li{
             margin:10px 0;
       }
+}
 
+@media (max-width: 900px){
       .faq-image{
             display: none;
       }
