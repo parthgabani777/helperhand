@@ -1,14 +1,16 @@
-*{
-      font-family: 'Roboto';
-}
 body{
       margin:0;
       padding:0;
+      font-family: 'Roboto',sans-serif;
       overflow-x: hidden;
 }
 
+.faq-image{
+      padding-top: 60px;
+}
 .faq-main{
-      color:#646464;
+      color:#646464; 
+      padding-top: 10px;
 }
 .faq-heading{
       color:#4F4F4F;
@@ -69,6 +71,9 @@ body{
 @media (max-width: 900px){
       .faq-image{
             display: none;
+      }
+      .faq-main{
+            padding-top:90px;
       }
 
       .faq-content{
