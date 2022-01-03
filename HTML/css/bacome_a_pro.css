@@ -130,6 +130,14 @@ body{
       color:#4F4F4F;
       max-width: 800px;
 }
+.how-it-works .bg-img-left{
+      position: absolute;
+      left: 0;
+}
+.how-it-works .bg-img-right{
+      position: absolute;
+      right: 0;
+}
 .how-it-works h1{
       font-weight: bold;
 }
@@ -272,6 +280,10 @@ footer .copyright p{
       .navbar-collapse ul>a{
             width: auto;
             border:1px solid #413f3f;
+      }
+
+      .how-it-works .bg-img-left,.bg-img-right{
+            display: none;
       }
 
       .register{

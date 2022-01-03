@@ -1,0 +1,17 @@
+.navbar .notification-icon a,.navbar .admin-profile a{
+      border: 0;
+      border-left: 1px solid white;
+      border-radius: 0;
+}
+.navbar .admin-profile img:nth-child(1){
+      padding-right: 10px;
+}
+.btn-orange{
+      background: #FF7B6D 0% 0% no-repeat padding-box;
+      border-radius: 20px;
+      border:0;
+      color:#FFFFFF;
+      font-size: 16px;
+      padding: 8px 15px;
+}
+
