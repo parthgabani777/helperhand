@@ -120,6 +120,26 @@ footer .social-media{
       background: none;
 } 
 
+.pagination{
+      justify-content: end;
+}
+.pages select{
+      color:#646464;
+      margin:0 5px;
+      padding: 5px;
+      border: 1px solid #dbdada;
+}
+.pagination .page-link{
+      border-radius: 50%;
+      margin: 0 5px;
+      color: #646464;
+}
+.page-item:first-child .page-link,.page-item:last-child .page-link{
+      border-radius: 50%;
+}
+.pagination .right-arrow img{
+      transform: rotate(180deg);
+}
 .helper-menu-option{
       display: none;
 }
@@ -155,6 +175,17 @@ footer .social-media{
       .services-table{
             display: none;
       }
+      .pagination{
+            justify-content: center;
+      }
+      .pages{
+            text-align: center;
+            margin-top: 10px;
+      }
+      .pages .col-12{
+            margin: 5px 0;
+      }
+
       footer{
             height:auto;
       }
