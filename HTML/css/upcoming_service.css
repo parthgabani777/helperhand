@@ -89,7 +89,72 @@ footer .social-media{
       margin: 0;
 }
 
-@media only screen and (max-width:750px){
+.service-cards{
+      display: none;
+}
+.service-cards{
+      margin: 30px auto;
+}
+.service-cards p{
+      margin: 0;
+}
+.service-cards .card-body>div{
+      padding: 10px 0;
+}
+.service-cards .card-body .card-address,.card-date-time{
+      display: flex;
+      align-items: center;
+}
+.service-cards .card-body>div:not(:last-child){
+      border-bottom: 1px solid #dbdada;
+}
+
+.service-cards .card-body img{
+      margin-right: 5px;
+}
+.service-cards .card-date-time span{
+      margin-right: 10px;
+}   
+.service-cards .card-footer{
+      text-align: center;
+      background: none;
+} 
+
+.helper-menu-option{
+      display: none;
+}
+
+
+@media only screen and (max-width:768px){
+      .helper-menu-option{
+            display: block;
+            border-bottom: 1px solid #dbdada;
+            width: 100%;
+      }
+      .navbar-collapse ul li{
+            margin: 5px 0;
+      }
+      .helper-menu-option li{
+            margin: 10px 0!important;
+      }
+      .nav a{
+            padding: 5px 10px;
+      }
+
+      .side-menu{
+            display: none;
+      }
+
+      .upcoming-services{
+            margin-bottom: 0;
+      }
+      .service-cards{
+            display: block;
+            margin-top: 0;
+      }
+      .services-table{
+            display: none;
+      }
       footer{
             height:auto;
       }
