@@ -1,0 +1,47 @@
+.user-management{
+      padding: 30px 0 0 20px;
+      color: #646464;
+      background-color: #F2F4F5;
+      padding-right: 20px;
+      margin-bottom: 30px;
+}
+
+.filter-input{
+      border: 1px solid #E1E1E1;
+      background-color: #FFFFFF;
+}
+.btn-user-add{
+      font-size: 14px;
+      border-radius: 4px;
+}
+.btn-search,.btn-clear{
+      font-size: 16px;
+      padding: 14px;
+      border-radius: 4px;
+}
+.btn-group button:nth-child(1){
+      margin-right: 10px;
+}
+.form-control{
+      padding: 14px 15px;   
+}
+.input-group-text{
+      color: #646464;
+}
+
+.active-status p,.inactive-status p{
+      color: #FFFFFF!important;
+      padding: 4px 11px;
+      width: fit-content;
+      font-size: 13px;
+}
+.active-status p{
+      background-color: #67B644;
+}
+.inactive-status p{
+      background-color: #FF6B6B;
+}
+.footer-text{
+      color: #A2A6A8;
+      font-size: 14px;
+}
