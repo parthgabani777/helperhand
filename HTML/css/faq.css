@@ -49,13 +49,19 @@ body{
       padding:13px;
       font-size: 18px;
 }
-.faq-buttons button:nth-child(odd){
+
+.faq-buttons .active{
       background-color:#29626D;
       color:#fff;
 }
-.faq-buttons button:nth-child(even){
+.faq-buttons button{
       border-bottom:3px solid #29626D;
 }
+
+.service-provider-faq{
+      display: none;
+}
+
 .faq-content-main{
       display: flex;
       font-size: 16px;
@@ -66,6 +72,10 @@ body{
 }
 .faq-content-heading{
       font-weight: 771;
+}
+
+.faq-content-main .active img{
+      transform: rotate(90deg);
 }
 
 @media (max-width: 900px){

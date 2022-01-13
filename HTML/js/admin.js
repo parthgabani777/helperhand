@@ -6,12 +6,17 @@ const submenu_list = document.querySelectorAll('.submenu-list');
 const submenu_img = document.querySelectorAll('.submenu-img');
 
 window.addEventListener('click',(e) => {
-      action_options.forEach((action_option)=>{
-            action_option.style.display = 'none';
-      })
+      action_options_hide();
 });
 
+const action_options_hide = () => {
+      action_options.forEach((action_option)=>{
+            action_option.style.display = 'none';
+      });
+}
+
 const hideShowActionOptions = (e,index) => {
+      action_options_hide();
       const style = window.getComputedStyle(action_options[index]);
       if(style.display === 'none'){
             action_options[index].style.display = 'block';

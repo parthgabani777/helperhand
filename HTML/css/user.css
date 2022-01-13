@@ -1,4 +1,4 @@
-.navbar .notification-icon a,.navbar .admin-profile a{
+.navbar .notification-icon>a,.navbar .admin-profile>a{
       border: 0;
       border-left: 1px solid white;
       border-radius: 0;
@@ -6,6 +6,46 @@
 .navbar .admin-profile img:nth-child(1){
       padding-right: 10px;
 }
+
+.navbar .admin-icon:hover{
+      cursor: pointer;
+}
+.navbar .profile-dropdown{
+      display: none;
+      position: absolute;
+      left: -80px;
+      top: 51px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.navbar .profile-dropdown ul{
+      list-style: none;
+      background: #FFFFFF;
+      color: #646464;
+      padding: 0;
+}
+.navbar .profile-dropdown p{
+      margin: 0;
+      line-height: 1.2;
+}
+.navbar .profile-dropdown .profile-username{
+      padding: 10px 20px;
+      border-bottom: 1px solid #646464;
+}
+.navbar .profile-dropdown ul li a{
+      border: 0;
+      margin: 0;
+      display: block;
+      padding: 5px 40px 5px 20px;
+}
+.navbar .profile-dropdown ul li a:hover{
+      background-color: #ecebeb!important;
+      border-radius: 0;
+      cursor: pointer;
+}
+.username-bold{
+      font-weight: bold;
+}
+
 .btn-orange{
       background: #FF7B6D 0% 0% no-repeat padding-box;
       border-radius: 20px;
