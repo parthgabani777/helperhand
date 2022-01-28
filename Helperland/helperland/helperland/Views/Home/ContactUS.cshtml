@@ -1,0 +1,85 @@
+﻿@{
+ViewBag.Title = "Contact US";
+Layout = "~/Views/Shared/PublicLayout.cshtml";
+}
+
+@section css{
+    <link rel="stylesheet" href="~/css/contact.css">
+}
+
+      <section class="contact-image">
+            <img src="~/assets/group-16_2.png">
+      </section>
+
+      <section class="container container-lg text-center contact-info">
+            <h1 class="contact-title">Contact us</h1>
+            <div class='star-icon'>
+                  <div class="line"></div>
+                  <img src="~/assets/forma-1-copy-5.png" width="25px" height="25px">
+                  <div class="line"></div>
+            </div>
+            <div class="contact-card">
+                  <div>
+                        <div class="contact-card-img"><img src="~/assets/forma-1_2.png"></div>
+                        <div class="contact-card-text">
+                              <p>1111 Lorem ipsum text 100,</p>
+                              <p>Lorem ipsum AB</p>
+                        </div>
+                       
+                  </div>
+                  <div>
+                        <div class="contact-card-img"><img src="~/assets/phone-call.png"></div>
+                        <div class="contact-card-text">
+                              <p>+49 (40) 123 56 7890</p>
+                              <p>+49 (40) 987 56 0000</p>
+                        </div>
+                  </div>
+                  <div>
+                        <div class="contact-card-img"><img src="~/assets/vector-smart-object.png"></div>
+                        <div class="contact-card-text">
+                              <p>info@helperland.com</p>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <section class="container container-md text-center contact-form">
+            <h2>Get in touch with us</h2>
+            <form action="#">
+                  <div class="row">
+                        <div class="input-group col-sm">
+                              <input type="text" class="form-control" id="firstname" placeholder="First name">
+                        </div>
+                        <div class="input-group col-sm">
+                              <input type="text" class="form-control" id="lastname" placeholder="Last name">
+                        </div>
+                  </div>
+                  <div class="row">
+                        <div class="input-group col-sm">
+                              <div class="input-group-prepend">
+                                    <div class="input-group-text mobile-code">+49</div>
+                              </div>
+                              <input type="tel" class="form-control" id="mobilenumber" placeholder="Mobile number">
+                        </div>
+                        <div class="input-group col">
+                              <input type="text" class="form-control" id="emailaddress" placeholder="Email address">
+                        </div>
+                  </div>
+                  <div class="row">
+                        <div class="input-group col">
+                              <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        </div>
+                  </div>
+                  <div class="row">
+                        <div class="input-group col">
+                              <textarea id="message" class="form-control" cols="30" rows="5" placeholder="Message"></textarea>
+                        </div>
+                  </div>
+                  <button class="btn-light form-btn">Submit</button>
+            </form>
+      </section>  
+
+      <section class="contact-map">
+            <img src="~/assets/group-16.png" class="map-img">
+            <img src="~/assets/pin.png" class="map-pin">
+      </section>

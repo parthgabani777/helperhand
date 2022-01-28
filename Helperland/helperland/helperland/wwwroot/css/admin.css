@@ -1,0 +1,197 @@
+body{
+      font-family: 'Roboto',sans-serif;
+}
+
+.btn-blue{
+      border: 0;
+      background: #1FB6FF;
+      color: #FFFFFF;
+}
+.btn-white{
+      border: 1px solid #DEDDDD;
+      background: #FFFFFF;
+      color: #646464;
+}
+
+.btn-option:hover{
+      cursor: pointer;
+}
+
+table tr td>div.action-options{
+      display: none;
+      position: absolute;
+      top:55px;
+      right: 20px;
+      border: 1px solid #00000040;
+      box-shadow: 0px 0px 6px #00000040;
+      border-radius: 4px;
+      z-index: 2;
+      background-color: #FFFFFF;
+}
+.action-options ul{
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      margin: 0;
+}
+.action-options ul li a{
+      text-decoration: none;
+      color: #646464;
+      display: block;
+      padding: 5px 60px 5px 10px;
+}
+.action-options ul li a:hover{
+      background-color: #646464;
+      color: #FFFFFF;
+}
+
+.nav-blue{
+      background-color: #1FB6FF;
+}
+.navbar h1{
+      color: #FFFFFF;
+      font-weight: normal;
+      font-size: 38px;
+      margin:0;
+}
+.navbar a,.navbar a:hover{
+      border:none;
+      background: none!important;
+}
+.navbar .admin-profile img:nth-child(1){
+      padding-right: 10px;
+}
+.navbar .admin-profile a{
+      margin: 0;
+      padding: 0;
+}
+.navbar .logout-btn{
+      padding:0 10px;
+}
+
+.admin-panel{
+      padding-top: 63px;
+}
+
+.side-menu{
+      padding: 0;
+      box-shadow: 2px 0px 6px #0000001A;
+}
+.side-menu ul{
+      list-style: none;
+      padding: 0;
+}
+.side-menu ul li{
+      padding: 15px 20px;
+      border-bottom: 1px solid #E5E5E5;
+}
+.side-menu ul li a{
+      padding: 15px 0;
+      text-decoration: none;
+      color: #646464;
+      font-size: 16px;
+}
+.side-menu ul li.selected a,.side-menu ul li:hover a{
+      color: #1FB6FF;
+      cursor: pointer;
+}
+
+.side-menu .submenu{
+      padding:0 20px; 
+}
+.side-menu .submenu ul li:hover a{
+      color: #646464;
+}
+
+.side-menu .submenu .submenu-img{
+      cursor: pointer;
+      padding: 5px;
+      transform: rotate(-90deg);
+}
+.side-menu .submenu-list{
+      padding: 5px 20px;    
+      display: none; 
+}
+.side-menu .submenu-list li{
+      border: 0;
+      padding: 3px 0;
+}
+.side-menu ul .submenu-hover:hover a{
+      color: #646464;
+}
+.submenu-hover{
+      background-color: #F9F9F9;
+}
+.side-menu .submenu-hover .submenu-img{
+      transform: rotate(0deg);
+}
+.side-menu .submenu-hover ul li a:hover{
+      color: #1FB6FF;
+      cursor: pointer;
+}
+
+.user-table table{
+      border: 1px solid #E1E1E1;
+}
+.user-table table>:not(:first-child){
+      border-top: 1px solid;
+}
+.user-table p,.user-table span{
+      color: #646464!important;
+}
+.user-table p{
+      margin:0;
+      line-height: 1.5;
+}
+.user-table thead{
+      background-color:#F9F9F9;
+}
+.user-table thead th{
+      vertical-align: middle;
+}
+.user-table thead th div{
+      display: flex;
+      align-items: center;
+}
+.user-table thead th div span{
+      margin-right: 5px;
+}
+.user-table tbody tr{
+      background-color: #FFFFFF;
+}
+.user-table tbody tr:hover{
+      background: #ecebeb;
+}
+.user-table tbody tr td{
+      box-shadow: none;
+      vertical-align: middle;
+      padding: 25px 8px;
+}
+.user-table tr td>div{
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+}
+.user-table .table-action img{
+      padding: 10px;
+}
+
+.pagination{
+      justify-content: end;
+}
+.pages select{
+      color:#646464;
+      margin:0 5px;
+      padding: 5px;
+      border: 1px solid #dbdada;
+}
+.pagination .page-link{
+      color: #646464;
+}
+.pagination .right-arrow img{
+      transform: rotate(180deg);
+}
+.pagination .active{
+      background-color: #565656;
+      color: #FFFFFF;
+}

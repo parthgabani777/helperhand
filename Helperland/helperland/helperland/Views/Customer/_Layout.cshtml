@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/common.css">
+    <link rel="stylesheet" href="~/css/user.css">
+    @RenderSection("css",required:false)
+</head>
+<body>
+    <header>
+            <nav class="navbar fixed-top navbar-expand-xl justify-content-between">   
+                  <a class="navbar-brand" href="~/">
+                        <img src="~/assets/logo-small.png" width="73px" height="50px">
+                  </a>
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="myNav">
+                        <ul class="nav navbar-nav align-items-center ms-auto">
+                              <div class="helper-menu-option">
+                                    <li><a href=""> Dashboard</a></li>
+                                    <li class="selected"><a href="">Service History</a></li>
+                                    <li><a href="">Service Schedule</a></li>
+                                    <li><a href="">Favorite Pros</a></li>
+                                    <li><a href="">Invoices</a></li>
+                                    <li><a href="">Notifications</a></li>
+                              </div>
+                              <li class="nav-item"><a href="~/home/Prices">Prices & services</a></li>
+                              <li class="nav-item"><a href="#">Warranty</a></li>
+                              <li class="nav-item"><a href="#">Blog</a></li>
+                              <li class="nav-item"><a href="~/home/ContactUS">Contact</a></li>
+                              <li class="nav-item notification-icon"><a href=""><img src="~/assets/icon-notification.png"></a></li>
+                              <li class="nav-item admin-profile position-relative">
+                                    <a class="admin-icon"><img src="~/assets/admin-user.png"/><img src="~/assets/sp-arrow-down.png"></a>
+                                    <div class="profile-dropdown">
+                                          <ul>
+                                                <li class="profile-username">
+                                                      <p>Welcome,</p>
+                                                      <p class="username-bold">Kavan Patel</p>
+                                                </li>
+                                                <li><a>My Deshboard</a></li>
+                                                <li><a>My Settings</a></li>
+                                                <li><a>Logout</a></li>
+                                          </ul>
+                                    </div>
+                              </li>
+                        </ul>
+                  </div>
+            </nav>
+      </header>
+
+      @RenderBody()
+
+      <footer>
+            <div class="footer-nav container">
+                  <div class="col-2 logo-div">
+                        <img src="~/assets/logo-large.png" class="logo">
+                  </div>
+                  <div class="col-8 text-center footer-item">
+                        <a href="~/">HOME</a>
+                        <a href="~/home/AboutUS">ABOUT</a>
+                        <a href="">TESTIMONIALS</a>
+                        <a href="~/home/Faqs">FAQS</a>
+                        <a href="">INSURANCE POLICY</a>
+                        <a href="">IMPRESSUM</a>
+                  </div>
+                  <div class="col-2 social-media">
+                        <a href="#"><img src="~/assets/ic-facebook.png"></a>
+                        <a href="#"><img src="~/assets/ic-instagram.png"></a>
+                  </div>
+            </div>
+            <div class="copyright justify-content-center align-content-center">
+                  <div class="col text-center copyright-message">
+                        <p>©2018 Helperland. All rights reserved. <span style="margin-left:10px">Terms and Conditions | Privacy Policy</span></p>
+                  </div>
+            </div>
+      </footer>
+
+      <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+      <script src="~/js/user.js"></script>
+      @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

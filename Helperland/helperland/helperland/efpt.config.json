@@ -1,0 +1,86 @@
+﻿{
+   "CodeGenerationMode": 0,
+   "ContextClassName": "HelperlandContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": "Controllers\Data",
+   "OutputPath": "Models",
+   "ProjectRootNamespace": "helperland",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[City]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ContactUs]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ContactUsAttachment]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FavoriteAndBlocked]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Rating]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ServiceRequest]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ServiceRequestAddress]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ServiceRequestExtra]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ServiceSetting]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[State]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[User]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[UserAddress]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Zipcode]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "PARTH\\SQLEXPRESS.Helperland",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoConstructor": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false
+}

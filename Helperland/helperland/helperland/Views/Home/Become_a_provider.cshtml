@@ -1,0 +1,176 @@
+﻿@{
+    ViewBag.Title = "Become a Provider";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section css{
+    <link rel="stylesheet" href="~/css/dd.css">
+    <link rel="stylesheet" href="~/css/bacome_a_pro.css">
+}
+
+@section Scripts{
+    <script src="~/js/dd.min.js"></script>
+}
+
+      <header class="bg-dark">
+            <nav class="navbar navbar-expand-xl">     
+                  <div class="logo"><a href="~/"><img src="~/assets/logo-large.png" alt="HelperHand" width="175" height="130" class="navbar-brand"></a></div>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="myNav">
+                        <ul class="nav navbar-nav align-items-center ms-auto">
+                              <a href="#" class="nav-link button-light">Book a Cleaner</a>
+                              <a href="~/home/Prices" class="nav-link">Prices</a>
+                              <a href="#" class="nav-link">Our Guarantee</a>
+                              <a href="#" class="nav-link">Blog</a>
+                              <a href="~/home/ContactUS" class="nav-link">Contact us</a>
+                              <a href="#" class="nav-link button-light">Login</a>
+                              <a href="~/home/Become_a_provider" class="nav-link button-light">Become a Helper</a>
+                              <div>
+                                    <select name="webmenu" is="ms-dropdown">
+                                          <option selected="selected" data-image="../assets/flags/GB.png"></option>
+                                          <option data-image="../assets/flags/DE.png"></option>
+                                          <option data-image="../assets/flags/IN.png"></option>
+                                    </select>
+                              </div>
+                        </ul>
+                  </div> 
+            </nav>
+
+            <section class="container-xl register">
+                  <h2 class="register-heading">Register Now!</h2>
+                  <form action="#">
+                        <div class="row">
+                              <div class="input-group col">
+                                    <input type="text" class="form-control" id="firstname" placeholder="First name">
+                              </div>
+                              
+                        </div>
+                        <div class="row">
+                              <div class="input-group col">
+                                    <input type="text" class="form-control" id="lastname" placeholder="Last name">
+                              </div>
+                        </div>
+                        <div class="row">
+                              <div class="input-group col">
+                                    <input type="text" class="form-control" id="email" placeholder="Email Address">
+                              </div>
+                        </div>
+                        <div class="row">
+                              <div class="input-group col-sm">
+                                    <div class="input-group-prepend">
+                                          <div class="input-group-text mobile-code">+49</div>
+                                    </div>
+                                    <input type="tel" class="form-control" id="mobilenumber" placeholder="Mobile number">
+                              </div>
+                        </div>
+                        <div class="row">
+                              <div class="input-group col">
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                              </div>
+                        </div>
+                        <div class="row">
+                              <div class="input-group col">
+                                    <input type="password" class="form-control" id="cpassword" placeholder="Confirm Password">
+                              </div>
+                        </div>
+                        <div class="row">
+                              <div class="input-group col checkbox">
+                                    <input type="checkbox" class="form-check-input" id="newsletter_checkbox">
+                                    <label for="newsletter_checkbox" class="form-check-label">Send me newsletters from Helperland</label>
+                              </div>
+                        </div>
+                        <div class="row">
+                              <div class="input-group col checkbox">
+                                    <input type="checkbox" class="form-check-input" id="t&c_checkbox">
+                                    <label for="t&c_checkbox" class="form-check-label">I accept <a href="#">terms and conditions</a> & <a href="#">privacy policy</a></label>
+                              </div>
+                        </div>
+                        <div class="row">
+                              <button class="form-btn">Get Started <img src="~/assets/arrow-white.png"/></button>
+                        </div>
+                  </form>
+            </section>
+
+            <div class="row g-0 text-center py-3">
+                  <div class="col">
+                        <a href="#how-it-works"><img src="~/assets/group-18_5.png"></a>
+                  </div>
+            </div>
+      </header>
+      
+      <section class="how-it-works container-xl" id="how-it-works">
+            <img src="~/assets/blog-left-bg.png" class="bg-img-left">
+            <img src="~/assets/blog-right-bg.png" class="bg-img-right">
+            <h1 class="text-center py-5">How it works</h1>
+            <div class="row align-items-center">
+                  <div class="col-7 how-text">
+                        <h2>Register yourself</h2>
+                        <p class="mb-4">Provide your basic information to register yourself as a service provider.</p>
+                        <a href="#" class="text-decoration-none">Read more<img src="~/assets/shape-2.png" class="ps-2"></a>
+                  </div>
+                  <div class="col-5 how-img">
+                        <img src="~/assets/how_it_works1.png"/>
+                  </div>
+            </div>
+            <div class="row align-items-center">
+                  <div class="col-7 order-2 how-text">
+                        <h2>Get service requests</h2>
+                        <p class="mb-4">You will get service requests from customes depend on service area and profile.</p>
+                        <a href="#" class="text-decoration-none">Read more<img src="~/assets/shape-2.png" class="ps-2"></a>
+                  </div>
+                  <div class="col-5 order-0 how-img">
+                        <img src="~/assets/how_it_works2.png"/>
+                  </div>
+            </div>
+            <div class="row align-items-center">
+                  <div class="col-7 how-text">
+                        <h2>Complete service</h2>
+                        <p class="mb-4">Accept service requests from your customers and complete your work.</p>
+                        <a href="#" class="text-decoration-none">Read more<img src="~/assets/shape-2.png" class="ps-2"></a>
+                  </div>
+                  <div class="col-5 how-img">
+                        <img src="~/assets/how_it_works3.png"/>
+                  </div>
+            </div>
+      </section>
+
+      <section class="newsletter my-5">
+            <div class="row">
+                  <div class="col-10 text-center email">
+                        <div class="row">
+                              <p>GET OUR NEWSLETTER</p>
+                        </div>
+                        <div class="row justify-content-center newsletter-input">
+                              <input type="text" placeholder="YOUR EMAIL">
+                              <input type="submit">
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <footer>
+            <div class="footer-nav">
+                  <div class="col logo-div">
+                        <img src="~/assets/logo-large.png" class="logo">
+                  </div>
+                  <div class="col-8 text-center footer-item">
+                        <a href="~/">HOME</a>
+                        <a href="~/home/AboutUS">ABOUT</a>
+                        <a href="">TESTIMONIALS</a>
+                        <a href="~/home/Faqs">FAQS</a>
+                        <a href="">INSURANCE POLICY</a>
+                        <a href="">IMPRESSUM</a>
+                  </div>
+                  <div class="col social-media">
+                        <a href="#"><img src="~/assets/ic-facebook.png"></a>
+                        <a href="#"><img src="~/assets/ic-instagram.png"></a>
+                  </div>
+            </div>
+            <div class="copyright justify-content-center align-content-center">
+                  <div class="col text-center copyright-message">
+                        <p>©2018 Helperland. All rights reserved. <span style="margin-left:10px">Terms and Conditions | Privacy Policy</span></p>
+                  </div>
+            </div>
+      </footer>

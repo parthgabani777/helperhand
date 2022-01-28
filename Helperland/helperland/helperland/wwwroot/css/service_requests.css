@@ -1,0 +1,114 @@
+.service-requests{
+      padding: 30px 20px 0 20px;
+      color: #646464;
+      background-color: #F2F4F5;
+      margin-bottom: 30px;
+}
+.service-requests .title h2{
+      font-size: 22px;
+      font-weight: bold;
+}
+
+.filter-input{
+      border: 1px solid #E1E1E1;
+      background-color: #FFFFFF;
+}
+
+.filter-date input::before{
+      color: #A0A0A0;
+      content: attr(placeholder) ":";
+      margin-right: 5px;
+}
+/* .filter-date input:focus::before{
+      content: "";
+} */
+.filter-date input{
+      position: relative;
+      padding-left: 35px;
+}
+.filter-date  input::-webkit-calendar-picker-indicator{
+      background: url('../assets/admin-calendar-blue.png') no-repeat;
+      position: absolute;
+      left: -15px;
+}
+.btn-user-add{
+      font-size: 14px;
+      border-radius: 4px;
+}
+.btn-search,.btn-clear{
+      font-size: 16px;
+      padding: 14px;
+      border-radius: 4px;
+}
+.btn-group button:nth-child(1){
+      margin-right: 10px;
+}
+.form-control{
+      padding: 14px 15px;   
+}
+.input-group-text{
+      color: #646464;
+}
+
+.user-table tbody tr td{
+      padding: 15px 8px;
+}
+.user-table tr td img{
+      margin-right: 5px;
+}
+.table-date{
+      font-weight: bold;
+}
+
+.provider>div:nth-child(2){
+      flex-direction: column;
+}
+.provider-icon{
+      border: 1px solid #9c9999;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      margin-right: 10px;
+}
+.provider-icon img{
+      margin: auto;
+}
+.ratings{
+      margin-right: 5px;
+}
+.ratings i {
+      color: #cecece;
+      font-size: 14px;
+}
+.rating-color {
+      color: #fbc634 !important;
+}
+.service-status p{
+      color: #FFFFFF!important;
+      font-size: 13px;
+      text-align: center;
+      width: fit-content;
+      padding: 3px 10px;
+}
+.new-status{
+      background-color: #F2BB37;
+}
+.pending-status{
+      background-color: #1FB6FF;
+}
+.completed-status{
+      background-color: #67B644;
+}
+.cancelled-status{
+      background-color: #FF6B6B;
+}
+
+.action-options ul{
+      width: max-content;
+}
+
+.footer-text{
+      color: #A2A6A8;
+      font-size: 14px;
+}

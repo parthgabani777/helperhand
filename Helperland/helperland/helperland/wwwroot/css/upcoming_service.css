@@ -1,0 +1,215 @@
+body{
+      font-family: 'Roboto', sans-serif;
+}
+
+.upcoming-services {
+      margin-top: 66px;
+      margin-bottom: 30px;
+}
+.upcoming-services h1{
+      font-size: 30px;
+      font-weight: normal;
+      padding: 40px 0;
+      color: #4F4F4F;
+}
+.upcoming-services .bold-username{
+      font-weight: bold;
+}
+.upcoming-services .side-menu{
+      background-color: #1D7A8C;
+      padding: 0;
+}
+.upcoming-services .side-menu ul{
+      list-style: none;
+      padding: 0;
+}
+.upcoming-services .side-menu ul li{
+      padding: 15px 20px;
+      border-bottom: 1px solid #888888;
+}
+.upcoming-services .side-menu ul li a{
+      padding: 15px 20px;
+}
+.upcoming-services .side-menu ul li.selected,.upcoming-services .side-menu ul li:hover{
+      background-color: #146371;
+      cursor: pointer;
+}
+.upcoming-services .side-menu ul li a{
+      text-decoration: none;
+      color: #FFFFFF;
+}
+
+.services-table table{
+      border: 1px solid #eeeeee;
+}
+.services-table p,.services-table span{
+      color: #646464!important;
+}
+.services-table p{
+      margin:0;
+      line-height: 1.5;
+}
+.services-table thead{
+      background-color:#F9F9F9;
+}
+.services-table thead th{
+      vertical-align: middle;
+}
+.services-table thead th div{
+      display: flex;
+      align-items: center;
+}
+.services-table thead th div span{
+      margin-right: 5px;
+}
+
+.services-table tbody tr td{
+      box-shadow: none;
+}
+.services-table tbody tr:hover{
+      background: #ecebeb;
+}
+.services-table tr td{
+      vertical-align: middle;
+}
+.services-table tr td div{
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+}
+.services-table tr td .table-date{
+      font-weight: bold;
+}
+.services-table tr td img{
+      margin-right: 5px;
+}
+.table>:not(:first-child){
+      border-top: 1px solid;
+}
+footer .logo-div{
+      padding: 0;
+}
+footer .social-media{
+      margin: 0;
+}
+
+.service-cards{
+      display: none;
+}
+.service-cards{
+      margin: 30px auto;
+}
+.service-cards p{
+      margin: 0;
+}
+.service-cards .card-body>div{
+      padding: 10px 0;
+}
+.service-cards .card-body .card-address,.card-date-time{
+      display: flex;
+      align-items: center;
+}
+.service-cards .card-body>div:not(:last-child){
+      border-bottom: 1px solid #dbdada;
+}
+
+.service-cards .card-body img{
+      margin-right: 5px;
+}
+.service-cards .card-date-time span{
+      margin-right: 10px;
+}   
+.service-cards .card-footer{
+      text-align: center;
+      background: none;
+} 
+
+.pagination{
+      justify-content: end;
+}
+.pages select{
+      color:#646464;
+      margin:0 5px;
+      padding: 5px;
+      border: 1px solid #dbdada;
+}
+.pagination .page-link{
+      border-radius: 50%;
+      margin: 0 5px;
+      color: #646464;
+}
+.page-item:first-child .page-link,.page-item:last-child .page-link{
+      border-radius: 50%;
+}
+.pagination .right-arrow img{
+      transform: rotate(180deg);
+}
+.helper-menu-option{
+      display: none;
+}
+
+
+@media only screen and (max-width:768px){
+      .helper-menu-option{
+            display: block;
+            border-bottom: 1px solid #dbdada;
+            width: 100%;
+      }
+      .navbar-collapse ul li{
+            margin: 5px 0;
+      }
+      .helper-menu-option li{
+            margin: 10px 0!important;
+      }
+      .nav a{
+            padding: 5px 10px;
+      }
+
+      .side-menu{
+            display: none;
+      }
+
+      .upcoming-services{
+            margin-bottom: 0;
+      }
+      .service-cards{
+            display: block;
+            margin-top: 0;
+      }
+      .services-table{
+            display: none;
+      }
+      .pagination{
+            justify-content: center;
+      }
+      .pages{
+            text-align: center;
+            margin-top: 10px;
+      }
+      .pages .col-12{
+            margin: 5px 0;
+      }
+
+      footer{
+            height:auto;
+      }
+      footer .footer-nav{
+            flex-direction: column;
+            height: auto;
+      }
+      footer .logo-div{
+            padding-left: 0;
+            text-align: center;
+            width: auto;
+      }
+      footer .footer-item{
+            display: flex;
+            flex-direction: column;
+            margin-left: 0;
+      }
+      footer .social-media{
+            text-align: center;
+            margin: 0;
+            width: auto;
+      }
+}

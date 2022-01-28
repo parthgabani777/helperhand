@@ -1,0 +1,110 @@
+body{
+      font-family: 'Roboto', sans-serif;
+}
+
+.contact-image{
+    padding-top: 60px;  
+}
+.contact-image img{
+      width: 100%;
+      height: 370px;
+}
+
+.contact-info{
+      margin-top: 30px;
+}
+.contact-card{
+      display: flex;
+      margin-top: 50px;
+} 
+.contact-card>div{
+      flex:33.33%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+.contact-card-img{
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.contact-card-text{
+      height: 50%;
+      padding-top: 20px;
+}
+.contact-card-text p{
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+      color: #4F4F4F;
+}
+
+.contact-form{
+      padding-top: 100px;
+}
+.contact-form h2{
+      font-size: 28px;
+}
+.contact-form .input-group{
+      padding-top: 15px;
+}
+.contact-form .input-group .mobile-code{
+      height: 100%;
+}
+.contact-form .input-group input{
+      padding: 15px 15px;
+      font-size: 16px;
+}
+.contact-form .input-group textarea{
+      resize: none;
+}
+
+.form-btn{
+      padding:10px 50px;
+      font-size: 20px;
+      margin-top: 15px;
+}
+
+.contact-map{
+      padding-top: 80px;
+      position: relative;
+}
+.contact-map .map-img{
+      width: 100%;
+}
+.contact-map .map-pin{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+}
+
+@media (min-width: 900px) {
+      .contact-form{
+          max-width: 615px;
+      }
+}
+
+@media(max-width:600px) {
+      .contact-image{
+            display: none;
+      }
+      .contact-info{
+            padding-top: 66px;
+      }
+      .contact-info .contact-card{
+            flex-wrap: wrap;
+            margin-top: 30px;
+      }
+      .contact-info .contact-card>div{
+            flex: 100%;
+            padding: 15px 0;
+      }
+      .contact-info .contact-card-text{
+            padding-top: 10px;
+      }
+
+      .contact-form{
+            padding-top: 50px;
+      }
+}
