@@ -1,0 +1,42 @@
+﻿@model helperland.Models.ViewModel.loginView
+@{
+    ViewData["Title"] = "login";
+    Layout = "~/Views/Shared/PublicLayout.cshtml";
+}
+
+@section css{
+    <link rel="stylesheet" href="~/css/login.css"/>
+}
+
+<section class="login bg-light p-3">
+    <form asp-action="login">
+        <h3 class="login-heading">Login to your account</h3>
+        <div class="row py-2">
+                <div class="input-group col">
+                    <input asp-for="Email" type="text" class="form-control" id="email" placeholder="Email Address"/>
+                </div>
+                <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="row py-2">
+                <div class="input-group col">
+                    <input asp-for="Password" type="password" class="form-control" id="password" placeholder="Password"/>
+                </div>
+                <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div class="row">
+                <div class="input-group col checkbox">
+                    <input type="checkbox" class="form-check-input remember_me_checkbox">
+                    <label for="remember_me_checkbox" class="form-check-label">Remember me</label>
+                </div>
+        </div>
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="row px-2">
+                <button class="form-btn">Login</button>
+        </div>
+        <div class="row">
+            <a href="Forget_password">Forget Password?</a>
+            <p>Don't have an account?<a asp-action="Create_account" class="ps-2">Create an account</a></p>
+        </div>
+    </form>
+</section>
+

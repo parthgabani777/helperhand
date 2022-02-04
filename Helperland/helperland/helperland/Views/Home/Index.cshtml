@@ -1,4 +1,5 @@
-﻿@{
+﻿@model helperland.Models.ViewModel.loginView
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -19,7 +20,7 @@
                 <a href="#" class="nav-link">Our Guarantee</a>
                 <a href="#" class="nav-link">Blog</a>
                 <a href="~/home/ContactUS" class="nav-link">Contact us</a>
-                <a href="#" class="nav-link button-light">Login</a>
+                <a asp-action="login" class="nav-link button-light">Login</a>
                 <a href="~/home/Become_a_provider" class="nav-link button-light">Become a Helper</a>
                 <div>
                     <img class="flag" src="./assets/ic-flag.png" style="margin-top:15px">

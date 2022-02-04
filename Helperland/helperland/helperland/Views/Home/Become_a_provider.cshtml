@@ -1,4 +1,6 @@
-﻿@{
+﻿@model helperland.Models.Data.User
+
+@{
     ViewBag.Title = "Become a Provider";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -40,40 +42,46 @@
 
             <section class="container-xl register">
                   <h2 class="register-heading">Register Now!</h2>
-                  <form action="#">
+                  <form asp-action="become_a_provider">
                         <div class="row">
                               <div class="input-group col">
-                                    <input type="text" class="form-control" id="firstname" placeholder="First name">
+                                    <input asp-for="FirstName" type="text" class="form-control" id="firstname" placeholder="First name"/>
                               </div>
-                              
+                              <span asp-validation-for="FirstName" class="text-danger"></span>
                         </div>
                         <div class="row">
                               <div class="input-group col">
-                                    <input type="text" class="form-control" id="lastname" placeholder="Last name">
+                                    <input asp-for="LastName" type="text" class="form-control" id="lastname" placeholder="Last name">
                               </div>
+                              <span asp-validation-for="LastName" class="text-danger"></span>
                         </div>
                         <div class="row">
                               <div class="input-group col">
-                                    <input type="text" class="form-control" id="email" placeholder="Email Address">
+                                    <input asp-for="Email" type="text" class="form-control" id="email" placeholder="Email Address"/>                    
                               </div>
+                              <span asp-validation-for="Email" class="text-danger"></span>
                         </div>
                         <div class="row">
                               <div class="input-group col-sm">
                                     <div class="input-group-prepend">
                                           <div class="input-group-text mobile-code">+49</div>
                                     </div>
-                                    <input type="tel" class="form-control" id="mobilenumber" placeholder="Mobile number">
+                                    <input asp-for="Mobile" type="tel" class="form-control" id="mobilenumber" placeholder="Mobile number">
+                                    
                               </div>
+                              <span asp-validation-for="Mobile" class="text-danger"></span>
                         </div>
                         <div class="row">
                               <div class="input-group col">
-                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                    <input asp-for="Password" type="password" class="form-control" id="password" placeholder="Password">
                               </div>
+                              <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
                         <div class="row">
                               <div class="input-group col">
-                                    <input type="password" class="form-control" id="cpassword" placeholder="Confirm Password">
+                                    <input asp-for="ConfirmPassword" type="password" class="form-control" id="cpassword" placeholder="Confirm Password">
                               </div>
+                              <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                         </div>
                         <div class="row">
                               <div class="input-group col checkbox">

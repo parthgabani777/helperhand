@@ -1,0 +1,45 @@
+body{
+      font-family: 'Roboto',sans-serif;
+}
+.register{
+      color:#4f4f4f;
+      width: 50%;
+      margin: 100px auto;
+}
+.register-title{
+      margin-bottom: 10px;
+      font-weight: 500;
+      font-size: 36px;
+}
+
+.form-btn{
+      margin:30px auto;
+      width: 160px;
+      height: 46px;
+      padding:9px 13px;
+      line-height: 24px;
+      font-size: 20px;
+      border:0;
+      border-radius: 25px;
+      background-color: #1D7A8C;
+      color: #fff;
+}
+
+.register-form{
+      margin-top: 40px;
+}
+.register-form .form-control,.mobile-code{
+      padding:10px;
+      margin-bottom: 15px;
+}
+.register-form .form-check-label a{
+      text-decoration: none;
+}
+.register-form .form-check-input{
+      margin-right: 5px;
+      border-radius: 3px!important;
+}
+
+footer .social-media{
+      margin-right: 100px;
+}

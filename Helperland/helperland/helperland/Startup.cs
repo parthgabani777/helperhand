@@ -1,5 +1,10 @@
+using helperland.Controllers.Data;
+using helperland.Models.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -23,6 +28,12 @@ namespace helperland
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.Configure<RazorViewEngineOptions>(o =>
+            {
+                o.ViewLocationFormats.Add("/Views/Customer/{0}" + RazorViewEngine.ViewExtension);
+            });
+            services.AddDbContext<HelperlandContext>(options => options.UseSqlServer("Data Source=PARTH\\SQLEXPRESS;Initial Catalog=Helperland;User ID=parth;Password=parth123"));
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,9 +48,9 @@ namespace helperland
                 app.UseExceptionHandler("/Home/Error");
             }
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

@@ -77,11 +77,42 @@ body{
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.first-content{
-      letter-spacing: 0px;
-      color: #FFFFFF;
-      margin-left:55px;
-      margin-top:125px;
+.login{
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:2;
+    transform:translate(-50%,-50%);
+    max-width:360px;
+}
+.login-heading{
+    margin:20px 0;
+}
+.login .form-control{
+    padding: 0.7rem;
+}
+.login .form-btn {
+    margin: 10px 0;
+    width: 100%;
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 25px;
+    background-color: #1D7A8C;
+    color: #fff;
+}
+.login .remember_me_checkbox{
+    margin-right:10px;
+}
+.login a {
+    text-decoration: none;
+    color: #1D7A8C;
+}
+
+.first-content {
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-left: 55px;
+    margin-top: 125px;
 }
 .first-content h1{
       font-size: 50px;

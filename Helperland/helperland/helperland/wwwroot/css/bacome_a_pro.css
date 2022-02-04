@@ -102,9 +102,11 @@ body{
       font-size: 24px;
       font-weight: bold;
 }
+.register .row {
+    margin-bottom: 15px;
+}
 .register .form-control,.mobile-code{
       padding:15px;
-      margin-bottom: 15px;
 }
 .register .input-group a{
       text-decoration: none;

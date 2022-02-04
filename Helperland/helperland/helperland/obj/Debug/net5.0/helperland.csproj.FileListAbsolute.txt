@@ -153,3 +153,16 @@ E:\Project\helperhand\helperland\Helperland\helperland\obj\Debug\net5.0\Razor\Vi
 E:\Project\helperhand\helperland\Helperland\helperland\obj\Debug\net5.0\Razor\Views\Home\Become_a_provider.cshtml.g.cs
 E:\Project\helperhand\helperland\Helperland\helperland\obj\Debug\net5.0\Razor\Views\Customer\_Layout.cshtml.g.cs
 E:\Project\helperhand\helperland\Helperland\helperland\obj\Debug\net5.0\Razor\Views\Customer\Service_history.cshtml.g.cs
+E:\Project\helperhand\helperland\Helperland\helperland\obj\Debug\net5.0\Razor\Views\Home\temp.cshtml.g.cs
+E:\Project\helperhand\helperland\Helperland\helperland\obj\Debug\net5.0\Razor\Views\Home\Create_account.cshtml.g.cs
+E:\Project\helperhand\helperland\Helperland\helperland\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\Project\helperhand\helperland\Helperland\helperland\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\Project\helperhand\helperland\Helperland\helperland\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Project\helperhand\helperland\Helperland\helperland\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+E:\Project\helperhand\helperland\Helperland\helperland\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+E:\Project\helperhand\helperland\Helperland\helperland\obj\Debug\net5.0\Razor\Views\Home\login.cshtml.g.cs
+E:\Project\helperhand\helperland\Helperland\helperland\obj\Debug\net5.0\Razor\Views\Home\Forget_password.cshtml.g.cs
+E:\Project\helperhand\helperland\Helperland\helperland\bin\Debug\net5.0\MailKit.dll
+E:\Project\helperhand\helperland\Helperland\helperland\bin\Debug\net5.0\MimeKit.dll
+E:\Project\helperhand\helperland\Helperland\helperland\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+E:\Project\helperhand\helperland\Helperland\helperland\obj\Debug\net5.0\Razor\Views\Home\Reset_password.cshtml.g.cs
