@@ -166,3 +166,4 @@ E:\Project\helperhand\helperland\Helperland\helperland\bin\Debug\net5.0\MailKit.
 E:\Project\helperhand\helperland\Helperland\helperland\bin\Debug\net5.0\MimeKit.dll
 E:\Project\helperhand\helperland\Helperland\helperland\bin\Debug\net5.0\BouncyCastle.Crypto.dll
 E:\Project\helperhand\helperland\Helperland\helperland\obj\Debug\net5.0\Razor\Views\Home\Reset_password.cshtml.g.cs
+E:\Project\helperhand\helperland\Helperland\helperland\obj\Debug\net5.0\Razor\Views\Home\Book_service.cshtml.g.cs

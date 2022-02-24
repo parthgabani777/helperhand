@@ -5,6 +5,17 @@
       color:#FFFFFF!important;
       font-size: 17px;
 }
+.btn-light-2 {
+    background-color: #1D7A8C;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 1.2;
+    border-radius: 23px;
+}
+.btn-light-2:hover {
+    opacity: 0.85;
+    color: #FFFFFF;
+}
 
 .star-icon{
       display: flex;
@@ -179,12 +190,18 @@ footer .btn-yellow{
       .navbar-toggle{
             margin-left: auto;
       }
-      .navbar-collapse ul{
-            float:left;
-            padding:15px 0 0 15px;
-      }
+    .navbar-collapse ul {
+            padding: 15px 0 0 15px;
+            margin-right: auto;
+            width: 100%;
+    }
       .navbar-collapse ul li{
             margin:10px 0;
+            text-align: center
+      }
+      .navbar-collapse ul li a{
+          display: inline-block;
+          width: 100%;
       }
 }
 

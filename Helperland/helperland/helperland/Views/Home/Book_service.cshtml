@@ -1,0 +1,333 @@
+﻿@{
+    ViewBag.Title = "Book Service";
+    Layout = "~/Views/Shared/PublicLayout.cshtml";
+}
+
+@section css{
+    <link rel="stylesheet" href="~/css/book_service.css">
+}
+
+@section Scripts{
+    <script src="~/js/book_service.js"></script>
+}
+
+<section class="container container-lg text-center book-service">
+    <h1 class="book-service-title">Set up your cleaning service</h1>
+    <div class="star-icon">
+            <div class="line"></div>
+            <img src="~/assets/forma-1-copy-5.png" width="25px" height="25px">
+            <div class="line"></div>
+    </div>
+
+    <div class="container-xl pt-4">
+            <div class="row custom-row">
+                <div class="col-8">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item" >
+                                    <a class="nav-link active">
+                                        <img src="~/assets/step-1.png">
+                                        <span>Setup Service</span>
+                                    </a>
+                            </li>
+                            <li class="nav-item" >
+                                    <a class="nav-link disable">
+                                        <img src="~/assets/step-2.png">
+                                        <span>Schedule & Plan</span>
+                                    </a>
+                            </li>
+                            <li class="nav-item" >
+                                    <a class="nav-link disable">
+                                        <img src="~/assets/step-3.png">
+                                        <span>Your Details</span>
+                                    </a>
+                            </li>
+                            <li class="nav-item" >
+                                    <a class="nav-link disable">
+                                        <img src="~/assets/step-4.png">
+                                        <span>Make Payment</span>
+                                    </a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-details">
+                            <div class="steps active">
+                                    <p class="tab-deatils-title">Enter your postal code</p>
+                                    <div class="postal-input">
+                                        <div class="input-group">
+                                                <input type="text" class="form-control" id="postal_code" placeholder="Postal code">
+                                        </div>
+                                        <button class="btn btn-light-2 px-4" id="check_postal">Check Availibility</button>
+                                    </div>
+                                    <span id="postal_error"></span>        
+                            </div>
+
+                            <div class="steps" id="steps">
+                                    <div class="pb-4 d-flex tab-section">
+                                        <div>
+                                                <p class="tab-deatils-title">When do you need the cleaner?</p>
+                                                <span class="input-date">
+                                                    <input type="date" id="service-start-date" class="form-control" placeholder="From Date">
+                                                </span>
+                                                <span class="input-date">
+                                                    <input type="time" class="form-control" placeholder="Start Time" id="service-start-time""/>
+                                                </span>
+                                                <div id="start-date-error" class="text-danger"></div>
+                                        </div>
+                                        <div class="mx-auto">
+                                                <p class="tab-deatils-title">How long do you need your cleaner to stay?</p>
+                                                <select class="form-select pe-5" aria-label="Default select example" id="ExtraHours">
+                                                    <option value="3" selected>3.0 Hours</option>
+                                                    <option value="3.5">3.5 Hours</option>
+                                                    <option value="4">4.0 Hours</option>
+                                                    <option value="4.5">4.5 Hours</option>
+                                                    <option value="5">5.0 Hours</option>
+                                                    <option value="5.5">5.5 Hours</option>
+                                                    <option value="6">6.0 Hours</option>
+                                                    <option value="6.5">6.5 Hours</option>
+                                                    <option value="7">7.0 Hours</option>
+                                                </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="py-4 tab-section">
+                                        <p class="tab-deatils-title">Extra Services</p>
+                                        <div class="img-container pt-2">
+                                                <div class="service-container">
+                                                    <div class="img-item">
+                                                            <img src="/assets/3.png"/>
+                                                    </div>
+                                                    <p class="pt-2">Inside Cabinets</p>
+                                                </div>
+                                                <div class="service-container">
+                                                    <div class="img-item">
+                                                            <img src="~/assets/5.png">
+                                                    </div>
+                                                    <p class="pt-2">Inside Fridge</p>
+                                                </div>
+                                                <div class="service-container">
+                                                    <div class="img-item">
+                                                            <img src="~/assets/4.png">
+                                                    </div>
+                                                    <p class="pt-2">Inside Oven</p>
+                                                </div>
+                                                <div class="service-container">
+                                                    <div class="img-item">
+                                                            <img src="~/assets/2.png">
+                                                    </div>
+                                                    <p class="pt-2">Laundry wash & dry</p>
+                                                </div>
+                                                <div class="service-container">
+                                                    <div class="img-item">
+                                                            <img src="~/assets/1.png">
+                                                    </div>
+                                                    <p class="pt-2">Interior windows</p>
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="py-4 tab-section">
+                                        <p class="tab-deatils-title">Comments</p>
+                                        <textarea class="form-control" id="comment" rows="3"></textarea>
+                                        <div class="pt-3">
+                                                <input class="form-check-input has-pets" type="checkbox" id="flexCheckDefault"/>
+                                                <label class="form-check-label" for="flexCheckDefault">I have a pets at home</label>
+                                        </div>            
+                                    </div>
+      
+                                    <div class="py-4 tab-section d-flex">
+                                        <button type="submit" class="btn btn-light-2 px-3 ms-auto" id="check_schedule" >Continue</button>
+                                    </div> 
+                            </div>
+                                                   
+                            <div class="steps">
+                                <p class="tab-deatils-title">Enter you contact details, so we can serve you better way!</p>
+                                <div class="addresses mt-3">
+                                </div>
+                                <button class="btn btn-outline-light mt-3" id="add-address-btn">+ Add new address</button>
+
+                                <form class="add-address p-3 mt-3" style="display:none">
+
+                                    <div>
+                                            <div class="input-grp">
+                                                <label>Street Name</label>
+                                                <input type="text" name="addressLine1" class="form-control" placeholder="Street name">
+                                            </div>
+                                            <div class="input-grp">
+                                                <label>Home number</label>
+                                                <input type="text" name="addressLine2" class="form-control" placeholder="House number">
+                                            </div>
+                                    </div>
+
+                                    <div>
+                                            <div class="input-grp">
+                                                <label>Postal code</label>
+                                                <input type="text" class="form-control" name="postalCode" placeholder="Postal code">
+                                            </div>
+                                            <div class="input-grp">
+                                                <label>City</label>
+                                                <input type="text" class="form-control" name="city" placeholder="City">
+                                            </div>
+                                    </div>
+
+                                    <div>
+                                            <div class="input-grp last">
+                                                <label>Phone number</label>
+                                                <div class="mobile-input">
+                                                        <div class="input-group-text mobile-code">+49</div>
+                                                        <input type="tel" class="form-control" id="mobilenumber" name="mobile" placeholder="Mobile number">
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="btn-row">
+                                            <button type="submit" id="save-address" class="btn btn-save">Save</button>
+                                            <button class="btn btn-cancel">Cancel</button>
+                                    </div>
+
+                                </form>
+                            </div>
+
+                            <div class="steps">
+                                    <button type="submit" class="btn btn-save rounded-pill px-4" id="make_payment">Make Payment</button>
+                            </div>
+                                    
+                        </div>
+                </div>
+
+                <div class="col-md">
+                        <div class="payment-card">
+                            <div class="payment-card-title">
+                                    <span>Payment Summary</span>
+                            </div>
+                            <div class="payment-card-into pt-4">
+                                    <div class="payment-card-date px-4">
+                                        <p><span id="start-date">01/01/2018</span> @@ <span id="start-time">4:00 pm</span></p>
+                                    </div>
+                                    <div class="payment-card-duration pb-3 px-4">
+                                        <div class="mb-2">
+                                                <p class="payment-card-subtitle">Duration</p>
+                                        </div>
+                                        <div class="payment-item">
+                                                <p>Basic</p>
+                                                <p>3 Hrs</p>
+                                        </div>
+                                        <div class="payment-item extra-items">
+                                                <p>Inside cabinets (extra)</p>
+                                                <p>30 Mins</p>
+                                        </div>
+                                        <div class="payment-item extra-items">
+                                                <p>Inside Fridge (extra)</p>
+                                                <p>30 Mins</p>
+                                        </div>
+                                        <div class="payment-item extra-items">
+                                                <p>Inside Oven (extra)</p>
+                                                <p>30 Mins</p>
+                                        </div>
+                                        <div class="payment-item extra-items">
+                                                <p>Laundry wash & dry (extra)</p>
+                                                <p>30 Mins</p>
+                                        </div>
+                                        <div class="payment-item extra-items">
+                                                <p>Interior windows (extra)</p>
+                                                <p>30 Mins</p>
+                                        </div>
+                                        <div class="payment-item pt-2 fw-bold border-top">
+                                                <p>Total Service Time</p>
+                                                <p><span id="servie-hours">3.5</span> Hrs</p>
+                                        </div>
+                                    </div>
+                                    <div class="payment-card-summary py-3 px-4">
+                                        <div class="payment-item">
+                                                <p>Per cleaning</p>
+                                                <p>$<span id="per-cleaning">75</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="payment-card-total px-4 py-3">
+                                        <div class="payment-item payment-card-price">
+                                                <p>Total Payment</p>
+                                                <p class="payment-card-total-price">$<span id="total_payment">75</span></p>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="payment-card-footer px-4 py-3">
+                                    <img src="~/assets/smiley.png" class="pe-2">
+                                    <p>See what is always included</p>
+                            </div>
+                        </div>
+                        <div class="question-section pt-4">
+                            <div class="question-title">
+                                    <h3>Questions?</h3>
+                            </div>
+                            <div class="question-container">
+                                    <div class="question">
+                                        <div class="pe-2">
+                                                <img src="~/assets/right-arrow-dark.png">
+                                        </div>
+                                        <p>Which Helperland professional will come to my place?</p>
+                                    </div>
+                                    <div class="question">
+                                        <div class="pe-2">
+                                                <img src="~/assets/right-arrow-dark.png">
+                                        </div>
+                                        <p>Which Helperland professional will come to my place?</p>
+                                    </div>
+                                    <div class="question">
+                                        <div class="pe-2">
+                                                <img src="~/assets/right-arrow-dark.png">
+                                        </div>
+                                        <p>Which Helperland professional will come to my place?</p>
+                                    </div>
+                                    <div class="question">
+                                        <div class="pe-2">
+                                                <img src="~/assets/right-arrow-dark.png">
+                                        </div>
+                                        <p>Which Helperland professional will come to my place?</p>
+                                    </div>
+                                    <div class="question">
+                                        <div class="pe-2">
+                                                <img src="~/assets/right-arrow-dark.png">
+                                        </div>
+                                        <p>Which Helperland professional will come to my place?</p>
+                                    </div>
+                                          
+                            </div>
+                            <div class="more-help pt-3">
+                                    <a href="" class="btn">For more help</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="postalcode-model" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <span>We are not providing service in this area. We’ll notify you if any helper would start working near your area.</span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade " id="success-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+          <div class="success-img">
+              <img src="~/assets/correct-white-medium (1).png"/>
+          </div>
+        <span class="h4 mx-4 text-center mb-0 text-secondary">Booking has been successfully submitted.</span>
+        <span>Service Request ID: <span id="service_id">2345</span></span>
+      </div>
+      <div class="modal-footer">
+        <a asp-action = "service_history" style="font-size:16px" class="btn btn-light-2 px-4 py-2 mx-auto">Ok</a>
+      </div>
+    </div>
+  </div>
+</div>

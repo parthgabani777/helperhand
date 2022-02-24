@@ -77,20 +77,19 @@ body{
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.login{
-    position:absolute;
-    top:50%;
-    left:50%;
-    z-index:2;
-    transform:translate(-50%,-50%);
-    max-width:360px;
+
+.login {
+    margin: auto;
 }
-.login-heading{
-    margin:20px 0;
+
+.login-heading {
+    margin: 0;
 }
-.login .form-control{
+
+.login .form-control {
     padding: 0.7rem;
 }
+
 .login .form-btn {
     margin: 10px 0;
     width: 100%;
@@ -100,12 +99,22 @@ body{
     background-color: #1D7A8C;
     color: #fff;
 }
-.login .remember_me_checkbox{
-    margin-right:10px;
+
+.login .remember_me_checkbox {
+    margin-right: 10px;
+    border-radius: 3px !important;
 }
+
 .login a {
     text-decoration: none;
     color: #1D7A8C;
+}
+
+.modal-dialog{
+    max-width: 350px;
+}
+.modal-body{
+    padding: 0;
 }
 
 .first-content {
@@ -309,13 +318,15 @@ footer .btn-yellow{
       }
       .navbar-collapse ul{
             width: fit-content;
-            margin-left: 0!important;
+            margin-right: auto;
+            width: 100%;
             text-align: center;
       }
       .navbar-collapse ul>a{
             width: auto;
             border:1px solid #413f3f;
       }
+   
       .first-content{
             margin-top: 50px;
       }
@@ -324,17 +335,16 @@ footer .btn-yellow{
       }
 
       .about .row .col{
-            flex: 50%;
-            max-width: 50%;
+            
       }
       .about .row .col:nth-child(3){
-            max-width: 50%;
+            
       }
-
+      .blog .row{
+          gap: 10px;
+      }
       .blog .row .col:nth-child(3){
-            max-width: 50%;
-            margin-right: auto;
-            padding-top: 30px;
+            
       }
 }
 
@@ -421,8 +431,8 @@ footer .btn-yellow{
 }
 
 @media only screen and (max-width: 600px){
-      .newsletter input[type="submit"]{
-            margin-top: 30px;
+      .newsletter .row{
+            gap: 10px;
       }
       .message{
             width: auto;

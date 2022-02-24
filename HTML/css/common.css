@@ -5,6 +5,17 @@
       color:#FFFFFF!important;
       font-size: 17px;
 }
+.btn-light-2{
+      background-color: #1D7A8C;
+      color: #FFFFFF;
+      font-size: 20px;
+      line-height: 1.2;
+      border-radius: 23px;
+}
+.btn-light-2:hover{
+      opacity: 0.85;
+      color: #FFFFFF;
+}
 
 .star-icon{
       display: flex;

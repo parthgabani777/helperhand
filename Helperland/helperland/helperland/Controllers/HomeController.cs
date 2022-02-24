@@ -14,6 +14,7 @@ using MimeKit;
 using System.Linq;
 using System.Threading.Tasks;
 using MailKit.Net.Smtp;
+using System.Text.Json;
 
 namespace helperland.Controllers
 {
@@ -32,6 +33,34 @@ namespace helperland.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Index(loginView loginView)
+        {
+            if (ModelState.IsValid)
+            {
+                iUserRepository iuserRepository = new iUserRepository(helperlandContext);
+                var user = iuserRepository.login(loginView);
+                if (user == null)
+                {
+                    ModelState.AddModelError(String.Empty, "User Not Found");
+                }
+                else
+                {
+                    if (user.Password == loginView.Password)
+                    {
+                        HttpContext.Session.SetString("username", user.UserId.ToString());
+                        return RedirectToAction("service_history");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(String.Empty, "Email or Password is incorrect");
+                    }
+
+                }
+            }
             return View();
         }
 
@@ -99,7 +128,7 @@ namespace helperland.Controllers
                 {
                     if (user.Password == loginView.Password)
                     {
-                        HttpContext.Session.SetString("username", loginView.Email);
+                        HttpContext.Session.SetString("username", user.UserId.ToString());
                         return RedirectToAction("service_history");
                     }
                     else
@@ -109,7 +138,7 @@ namespace helperland.Controllers
 
                 }
             }
-            return View();
+            return RedirectToAction("index");
         }
 
         [HttpGet]
@@ -197,6 +226,49 @@ namespace helperland.Controllers
             return RedirectToAction("index");
         }
 
+        public IActionResult Book_service()
+        {
+            if (HttpContext.Session.GetString("username") != null)
+            {
+                return View();
+            }
+            //return RedirectToAction("index");
+            return View();
+        }
+
+        [HttpPost]
+        public JsonResult Check_Postal([FromBody]ZipCodeView zipCodeView)
+        {
+            iUserRepository iuserRepository = new iUserRepository(helperlandContext);
+            if (iuserRepository.IsServiceProvidedOnPostal(zipCodeView)) return Json(true);
+            return Json(false);
+        }
+
+        public JsonResult Get_address()
+        {
+            if (HttpContext.Session.GetString("username") == null) return Json(false);
+            string UserID = HttpContext.Session.GetString("username");
+            iUserRepository iuserRepository = new iUserRepository(helperlandContext);
+            return Json(iuserRepository.GetUserAddress(UserID));
+        }
+
+        public JsonResult Add_Address([FromBody]UserAddress userAddress)
+        {
+            iUserAddressRepository iuserAddressRepository = new iUserAddressRepository(helperlandContext);
+            userAddress.UserId = int.Parse(HttpContext.Session.GetString("username"));
+            iuserAddressRepository.AddUserAddress(userAddress);
+            return Json(userAddress);
+        }
+
+        [HttpPost]
+        public JsonResult Add_service([FromBody]AddService addService)
+        {
+            //if (HttpContext.Session.GetString("username") == null) return Json(false);
+            iServiceRepository iserviceRepository = new iServiceRepository(helperlandContext);
+            ServiceRequest serviceRequest = iserviceRepository.AddService(addService, HttpContext.Session.GetString("username"));
+            return Json(serviceRequest.ServiceRequestId);
+        }
+
         public IActionResult Prices()
         {
             return View();
@@ -214,20 +286,6 @@ namespace helperland.Controllers
 
         public IActionResult AboutUS()
         {
-            return View();
-        }
-
-        [HttpGet]
-        public IActionResult Temp()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult Temp(State state)
-        {
-            iStateRepository istateRepository = new iStateRepository(helperlandContext);
-            istateRepository.create(state);
             return View();
         }
 

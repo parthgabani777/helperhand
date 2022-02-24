@@ -14,13 +14,13 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="myNav">
-            <ul class="nav navbar-nav ms-auto">
-                <a href="#" class="nav-link button-light">Book a Cleaner</a>
+            <ul class="nav navbar-nav navbar-center ms-auto">
+                <a href="~/home/book_service" class="nav-link button-light">Book a Cleaner</a>
                 <a href="~/home/Prices" class="nav-link">Prices</a>
                 <a href="#" class="nav-link">Our Guarantee</a>
                 <a href="#" class="nav-link">Blog</a>
                 <a href="~/home/ContactUS" class="nav-link">Contact us</a>
-                <a asp-action="login" class="nav-link button-light">Login</a>
+                <a data-bs-toggle="modal" data-bs-target="#loginModal" class="nav-link button-light">Login</a>
                 <a href="~/home/Become_a_provider" class="nav-link button-light">Become a Helper</a>
                 <div>
                     <img class="flag" src="./assets/ic-flag.png" style="margin-top:15px">
@@ -273,3 +273,54 @@
         </div>
     </div>
 </footer>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-light">
+        <div class="modal-header">
+            <h3 class="login-heading">Login to your account</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      <div class="modal-body">
+            <form asp-action="index" class="login p-3">
+                
+                <div class="row py-2">
+                        <div class="input-group col">
+                            <input asp-for="Email" type="text" class="form-control" id="email" placeholder="Email Address"/>
+                        </div>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="row py-2">
+                        <div class="input-group col">
+                            <input asp-for="Password" type="password" class="form-control" id="password" placeholder="Password"/>
+                        </div>
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="row">
+                        <div class="input-group col checkbox">
+                            <input type="checkbox" class="form-check-input remember_me_checkbox">
+                            <label for="remember_me_checkbox" class="form-check-label">Remember me</label>
+                        </div>
+                </div>
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="row px-2">
+                        <button class="form-btn">Login</button>
+                </div>
+                <div class="row">
+                    <a asp-action="Forget_password">Forget Password?</a>
+                    <p>Don't have an account?<a asp-action="Create_account" class="ps-2">Create an account</a></p>
+                </div>
+            </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+@section Scripts{
+    <script>
+        new bootstrap.Modal(document.getElementById('loginModal')).show();    
+    </script>
+}
+

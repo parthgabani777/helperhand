@@ -4,7 +4,6 @@ body{
       font-family: 'Roboto',sans-serif;
 }
 .price-image img{
-      width: 100%;
       padding-top: 60px;
 }
 .price-main{
@@ -77,6 +76,7 @@ body{
       margin-top: 30px;
       display: flex;
       justify-content: space-evenly;
+      flex-wrap: wrap;
 }
 .services-img{
       padding:30px 36px;
@@ -172,7 +172,14 @@ body{
       width:80%;
 }
 
+@media (max-width: 1200px){
+    .price-card {
+        width: 80%;
+    }
+}
+
 @media (max-width: 900px){
+   
       .price-image{
             display: none;
       }
@@ -211,11 +218,10 @@ body{
             width:100%;
             margin:0 0 0 15px;
       }
-      .services{
-            flex-direction: column;
-      }
       .services>div{
             margin:10px 0;
+            flex: 50%;
+            min-width: 50%;
       }
       .cleaning-card-heading{
             text-align: center;

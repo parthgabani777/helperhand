@@ -65,5 +65,18 @@ namespace helperland.Controllers.repo
         {
             return helperContext.Users.FirstOrDefault(u => u.Email == user.Email);
         }
+
+        public Boolean IsServiceProvidedOnPostal(ZipCodeView zipCodeView)
+        {
+            var isFound = helperContext.Users.FirstOrDefault(u => u.ZipCode == zipCodeView.ZipCode);
+            if(isFound == null) return false;
+            return true;
+        }
+
+        public List<UserAddress> GetUserAddress(String UserID)
+        {
+            var useradresses = helperContext.UserAddresses.Where(u=> u.UserId == int.Parse(UserID)).ToList();
+            return useradresses;
+        }
     }
 }
